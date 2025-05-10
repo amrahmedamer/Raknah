@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation Reminder</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f2f4f8; padding: 30px;">
+    <div style="max-width: 600px; margin: auto; background-color: #ffffff; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <h2 style="color: #f0ad4e; margin-bottom: 10px;">⏰ Your Reservation is About to Expire</h2>
+
+        <p style="font-size: 16px;">Hi <strong>{{FullName}}</strong>,</p>
+
+        <p style="font-size: 16px;">
+            Just a quick reminder — your parking reservation will be <strong>cancelled in 5 minutes</strong> if you don’t show up.
+        </p>
+
+        <div style="margin: 5px 0; background-color: #f8f9fa; padding: 15px; border-radius: 8px;">
+            <h4 style="margin-bottom: 10px;">🅿️ Reservation Details:</h4>
+            <ul style="list-style: none; padding-left: 0;">
+                <li><strong>🚘 Car Number:</strong> {{CarNumber}}</li>
+                <li><strong>📍 Garage:</strong> {{ParkingSpotName}}</li>
+                <li><strong>🗓️ Date:</strong> {{StartTimeOfReservation}}</li>
+            </ul>
+        </div>
+
+        <p style="font-size: 16px;">
+            If you’re on the way, please arrive soon to avoid cancellation.
+        </p>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="{{Url}}" style="background-color: #007bff; color: white; text-decoration: none; padding: 12px 24px; border-radius: 5px; display: inline-block; font-weight: bold;">
+                View Reservation 🚗
+            </a>
+        </div>
+
+        <p style="font-size: 14px; color: #6c757d;">Thanks for using <strong>Raknah</strong>. Safe travels!</p>
+    </div>
+</body>
+</html>
